@@ -1,0 +1,385 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0",
+        "description": "swagger REST API with CRUD",
+        "title": "movies API"
+    },
+    "host": "localhost:3097",
+    "basePath": "/",
+    "schemes": [
+        "http"
+    ],
+    "paths": {
+        
+        "/admin/signup/":{
+            "post":{
+                "description":"type should be admin or customer or sp",
+                "parameters":[
+                    {
+                        "in":"formData",
+                        "name":"name",
+                        "required":"true"
+    
+                        },
+                        {
+                            "in":"formData",
+                            "name":"email",
+                            "required":"true"
+        
+                            },
+                            {
+                                "in":"formData",
+                                "name":"password",
+                                "required":"true"
+            
+                                }
+                                
+                        
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully deleted the data"
+                    }
+                }
+
+              
+            }
+        },
+        "/admin/login/":{
+            "post":{
+                "description":"type should be admin or customer or sp",
+                "parameters":[
+                    {
+                        "in":"formData",
+                        "name":"email",
+                        "required":"true"
+    
+                        },
+                    {
+                    "in":"formData",
+                    "name":"password",
+                    "required":"true"
+
+                    }
+                    
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully deleted the data"
+                    }
+                }
+                
+
+            }
+        },
+        "/admin/findAllCustomer/":{
+            "get":{
+                "description":"put the type of which you find the near by distance",
+                
+                "responses": {
+                    "200": {
+                        "description": "Successfully deleted the data"
+                    }
+                }
+                
+
+            }
+        },
+
+        "/admin/findAllSP/":{
+            "get":{
+                "description":"type should be admin or customer or sp",
+                    
+                "responses": {
+                    "200": {
+                        "description": "Successfully deleted the data"
+                    }
+                }
+                
+
+            }
+        },
+        "/customer/signup/":{
+            "post":{
+                "description":"type should be admin or customer or sp",
+                "parameters":[
+                    {
+                        "in":"formData",
+                        "name":"name",
+                        "required":"true"
+    
+                        },
+                        {
+                            "in":"formData",
+                            "name":"email",
+                            "required":"true"
+        
+                            },
+                            {
+                                "in":"formData",
+                                "name":"password",
+                                "required":"true"
+            
+                                },
+                                {
+                                    "in":"formData",
+                                    "name":"lat",
+                                    "required":"true"
+                
+                                    },
+                                    {
+                                        "in":"formData",
+                                        "name":"lang",
+                                        "required":"true"
+                    
+                                    }
+
+                                
+                        
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully deleted the data"
+                    }
+                }
+
+              
+            }
+        },
+        "/customer/login/":{
+            "post":{
+                "description":"type should be admin or customer or sp",
+                "parameters":[
+                   
+                        {
+                            "in":"formData",
+                            "name":"email",
+                            "required":"true"
+        
+                            },
+                            {
+                                "in":"formData",
+                                "name":"password",
+                                "required":"true"
+            
+                                }                
+                        
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully deleted the data"
+                    }
+                }
+
+              
+            }
+        },
+        "/customer/updateprofile/":{
+            "put":{
+                "description":"type should be admin or customer or sp",
+                "parameters":[
+                   
+                        {
+                            "in":"formData",
+                            "name":"name",
+                            "required":"true"
+        
+                            },
+                            {
+                                "in":"formData",
+                                "name":"email",
+                                "required":"true"
+            
+                                },
+                            {
+                                "in":"formData",
+                                "name":"password",
+                                "required":"true"
+            
+                                },
+                                
+                            {
+                                "in":"formData",
+                                "name":"lat",
+                                "required":"true"
+            
+                                },
+                                
+                                {
+                                    "in":"formData",
+                                    "name":"lang",
+                                    "required":"true"
+                
+                                    }                      
+                        
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully deleted the data"
+                    }
+                }
+
+              
+            }
+        },
+        "/customer/findSP/":{
+            "post":{
+                "description":"type should be admin or customer or sp",
+                "parameters":[  
+                            {
+                                "in":"formData",
+                                "name":"lat",
+                                "required":"true"
+            
+                                },
+                                
+                                {
+                                    "in":"formData",
+                                    "name":"lang",
+                                    "required":"true"
+                
+                                    }                      
+                        
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully deleted the data"
+                    }
+                }
+
+              
+            }
+        },
+        "/SP/signup/":{
+            "post":{
+                "description":"type should be admin or customer or sp",
+                "parameters":[  
+                            {
+                                "in":"formData",
+                                "name":"name",
+                                "required":"true"
+            
+                                },
+                                
+                                {
+                                    "in":"formData",
+                                    "name":"email",
+                                    "required":"true"
+                
+                                    },
+                                    {
+                                        "in":"formData",
+                                        "name":"password",
+                                        "required":"true"
+                    
+                                        },
+                                        {
+                                            "in":"formData",
+                                            "name":"lat",
+                                            "required":"true"
+                        
+                                            },
+                                            {
+                                                "in":"formData",
+                                                "name":"lang",
+                                                "required":"true"
+                            
+                                                }                    
+                        
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully deleted the data"
+                    }
+                }
+
+              
+            }
+        },
+        "/SP/login/":{
+            "post":{
+                "description":"type should be admin or customer or sp",
+                "parameters":[  
+                           
+                                
+                                {
+                                    "in":"formData",
+                                    "name":"email",
+                                    "required":"true"
+                
+                                    },
+                                    {
+                                        "in":"formData",
+                                        "name":"password",
+                                        "required":"true"
+                    
+                                        }                   
+                        
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully deleted the data"
+                    }
+                }
+
+              
+            }
+        },
+        "/SP/updateprofile/":{
+            "put":{
+                "description":"type should be admin or customer or sp",
+                "parameters":[  
+                           
+                                
+                                {
+                                    "in":"formData",
+                                    "name":"name",
+                                    "required":"true"
+                
+                                    },
+                                    {
+                                        "in":"formData",
+                                        "name":"email",
+                                        "required":"true"
+                    
+                                        },
+                                        {
+                                            "in":"formData",
+                                            "name":"password",
+                                            "required":"true"
+                        
+                                            },
+                                            {
+                                                "in":"formData",
+                                                "name":"lat",
+                                                "required":"true"
+                            
+                                                },
+                                                {
+                                                    "in":"formData",
+                                                    "name":"lang",
+                                                    "required":"true"
+                                
+                                                    },
+                                                    {
+                                                        "in":"formData",
+                                                        "name":"token",
+                                                        "required":"true"
+                                    
+                                                        }
+                                                         
+                        
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully deleted the data"
+                    }
+                }
+
+              
+            }
+        }
+        
+    }
+}
